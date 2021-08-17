@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Mohawel Al Maly</title>
+</head>
+<body>
+    <h1>  Dollarso Toi Egyptionalo pondos</h1>
+    <input type="text" class="boxo" id="value" >
+ 
+    <select  id="curencyolo">
+
+        <option  value="dollaro"> dollaro</option>
+        <option value="riyalo"> riyalo</option>
+        <option value="Dinaro Kowatyo"> Dinaro Kowatyo</option>
+        <option value="Dinaro Ardonyo"> Dinaro Ardonyo</option>
+        <option value="Dinaro Ardonyo"> Euoro</option>
+        <option value="Chinese Yuan">Chinese Yuan</option>
+    </select>
+    <input type="button" class="boxo" value="Convert" ondblclick="convert()" >
+    <br>
+    <input type="text" class="boxo" id="resuelto" disabled >
+</body>
+<script>
+    var x = document.getElementById('value')
+    var y = document.getElementById('curencyolo')
+    var resuelto = document.getElementById('resuelto')
+    function convert() 
+    {
+        if(y.value == 'dollaro')
+        {
+            resuelto.value = x.value *15.66 + "EGP";
+        }
+        else if(y.value == 'riyalo')
+        {
+            resuelto.value = x.value *4.18 + "EGP";
+        }
+        else if(y.value == 'Dinaro Kowatyo')
+        {
+            resuelto.value = x.value *52.25 + "EGP";
+        }
+        else if(y.value == 'Dinaro Ardonyo')
+        {
+            resuelto.value = x.value *22.17 + "EGP";
+        }
+        else if(y.value == 'Euoro')
+        {
+            resuelto.value = x.value *19.10 + "EGP";
+        }
+        else if(y.value == 'Chinese Yuan')
+        {
+            resuelto.value = x.value *2.4451+ "EGP";
+        }
+        else if(y.value == 'Chinese Yuan')
+        {
+            resuelto.value = x.value *2.4451+ "EGP";
+        }
+        
+    }
+</script>
+</html>
